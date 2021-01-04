@@ -1,0 +1,64 @@
+[debug] [2020-12-21T04:00:18.227Z] ----------------------------------------------------------------------
+[debug] [2020-12-21T04:00:18.231Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\saad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2020-12-21T04:00:18.232Z] CLI Version:   9.0.1
+[debug] [2020-12-21T04:00:18.232Z] Platform:      win32
+[debug] [2020-12-21T04:00:18.232Z] Node Version:  v14.15.3
+[debug] [2020-12-21T04:00:18.234Z] Time:          Mon Dec 21 2020 06:00:18 GMT+0200 (توقيت شرق أوروبا الرسمي)
+[debug] [2020-12-21T04:00:18.234Z] ----------------------------------------------------------------------
+[debug] [2020-12-21T04:00:18.234Z] 
+[debug] [2020-12-21T04:00:18.248Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-21T04:00:18.249Z] > authorizing via signed-in user
+[debug] [2020-12-21T04:00:18.250Z] [iam] checking project e-clone-f8b59 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-21T04:00:18.254Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/e-clone-f8b59:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-12-21T04:00:19.784Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 21 Dec 2020 04:00:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=612","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-21T04:00:19.788Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/e-clone-f8b59  
+ 
+[debug] [2020-12-21T04:00:21.257Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 21 Dec 2020 04:00:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'e-clone-f8b59'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-12-21T04:00:35.487Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/e-clone-f8b59/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-12-21T04:00:37.336Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 21 Dec 2020 04:00:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[e-clone-f8b59]: beginning deploy... 
+[info] i  hosting[e-clone-f8b59]: found 6 files in public 
+[debug] [2020-12-21T04:00:37.384Z] > refreshing access token with scopes: []
+[debug] [2020-12-21T04:00:37.384Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-21T04:00:37.389Z] [hosting] hash cache [cHVibGlj] stored for 6 files
+[debug] [2020-12-21T04:00:37.393Z] [hosting][hash queue][FINAL] {"max":2,"min":1,"avg":1,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":15}
+[debug] [2020-12-21T04:01:25.224Z] [populateQueue] Retrying task index 0
+[debug] [2020-12-21T04:01:25.225Z] > refreshing access token with scopes: []
+[debug] [2020-12-21T04:01:25.226Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-21T04:01:27.634Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 21 Dec 2020 04:01:26 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-21T04:01:27.715Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/e-clone-f8b59/versions/9bcf4fe57e35a189:populateFiles [none]
+[debug] [2020-12-21T04:01:27.716Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/e-clone-f8b59/versions/9bcf4fe57e35a189:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/index.html":"7a0102de133a4c2a01cecd75d73336e063abe9b1bdaf0ade77f460c9510f4fe5","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49"}}
+[debug] [2020-12-21T04:01:29.331Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/e-clone-f8b59/versions/9bcf4fe57e35a189:populateFiles 200
+[debug] [2020-12-21T04:01:29.331Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/e-clone-f8b59/versions/9bcf4fe57e35a189:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/e-clone-f8b59/versions/9bcf4fe57e35a189/files"}
+[debug] [2020-12-21T04:01:29.332Z] [hosting][populate queue][FINAL] {"max":4107,"min":4107,"avg":4107,"active":0,"complete":1,"success":1,"errored":0,"retried":1,"total":1,"elapsed":51950}
+[debug] [2020-12-21T04:01:29.333Z] [hosting] uploads queued: 0
+[debug] [2020-12-21T04:01:29.333Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1608523289333}
+[info] +  hosting[e-clone-f8b59]: file upload complete 
+[debug] [2020-12-21T04:01:29.336Z] [hosting] deploy completed after 51988ms
+[debug] [2020-12-21T04:01:29.787Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "e-clone-f8b59"
+    },
+    "site": "e-clone-f8b59",
+    "version": "sites/e-clone-f8b59/versions/9bcf4fe57e35a189"
+  }
+]
+[info] i  hosting[e-clone-f8b59]: finalizing version... 
+[debug] [2020-12-21T04:01:29.790Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-21T04:01:29.791Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
